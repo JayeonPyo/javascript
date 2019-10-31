@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <ul>
+        <li class="class4">4반</li>
+        <li class="class5">5반</li>
+        <li class="class6">6반</li>
+    </ul>
+    <ol>
+        <li class="class4">박예원쌤</li>
+        <li class="class5">김건욱쌤</li>
+        <li class="class6">노현정쌤</li>
+    </ol>
+    <ul>
+        <li class="class4 class5 class6" id="king">김민준선배</li>
+        <li class="class6">곽민규선배</li>
+    </ul>
+    <script>
+        //컬렉션 아님
+      var ul = document.querySelectorAll("ul");
+      ul[1].style.color="red";
+      var class4 = document.querySelector("ol .class4");
+      class4.style.color="blue";
+      var king = document.querySelector("#king");
+      king.style.color="yellow";
+
+    </script>
+</body>
+</html>

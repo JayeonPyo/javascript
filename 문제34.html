@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>쇼핑몰 환불 가능 여부 검사</title>
+    <script>
+    function checkDate (){
+      var date = document.getElementById("pdate").value;
+      //pdate라는 날짜객체 생성
+      var pdate = new Date(date);
+      var today = new Date();
+      var diff = today.getTime() - pdate.getTime();
+      var days = Math.floor(diff / (1000*60*60*24));
+
+
+      if(days > 30){
+          alert("교환기간이 지났습니다...");
+      }
+      else
+         alert("교환 가능합니다.");
+    }
+    </script>
+</head>
+<body>
+    <h1>
+        쇼핑몰 환불 날짜 검사하기
+    </h1>
+        구입날짜:
+        <input type="date" id="pdate">
+        <button onclick="checkDate()">검사</button>
+</body>
+</html>

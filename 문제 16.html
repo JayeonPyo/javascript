@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>문제 16</title>
+</head>
+
+<body>
+
+    <script>
+
+        var num = parseInt(prompt("정수를 입력하세요 "));
+
+        function a() {
+            if (num <= 0) {
+                document.write("입력 오류 입니다.");
+            }
+            else {
+                for (var i = 0; i < num; i++) {
+                    for (var j = 0; j <= i; j++) {
+                        document.write("*");
+
+                    }
+                    document.write('</br>');
+                }
+            }
+        }
+
+
+        a();
+
+    </script>
+
+
+</body>
+
+</html>

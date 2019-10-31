@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>innerHTML변경하기</title>
+    <script>
+        function get(b){
+       var div = document.getElementById('ex');
+       alert(div.innerHTML);
+       b.style.color="red"
+        }
+
+        function set(){
+         document.getElementById('ex').innerHTML = prompt("변경할 내용을 입력하세요");
+        }
+    </script>
+</head>
+<body>
+    <div id="ex">여기가 div로 선언되었습니다.</div>
+    <button onclick="get(this)">div 요소 내용 출력하기</button><br>
+    <button onclick="set()">div 요소 내용 변경하기</button>
+</body>
+</html>

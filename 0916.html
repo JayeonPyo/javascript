@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+    //객체 생성자 함수로 객체 만들기
+    // function Student(n, s){
+    //     this.school="선린인터넷고";
+    //     this.name = n;
+    //     this.score = s;
+    // }
+    // //프로토타입
+    // Student.prototype.getGrade = function (){
+    //         if(this.score > 80) {
+    //             return "A";
+    //         }
+    //         else if(this.score > 60){
+    //             return "B";
+    //         }
+    //         else
+    //             return "F";
+    //     }
+    // var yewon = new Student ("박예원",100);
+    // var woo = new Student ("최우혁",90);
+    // document.write(woo.getGrade());
+    
+
+    //new Object() 사용
+    var Mycar = new Object();
+
+    //프로퍼티
+    Mycar.model = 12345;
+    Mycar.speed = 200;
+    Mycar.color = "red";
+
+    //메소드 추가
+    Mycar.brake = function (){
+        speed = speed - 10;
+    }
+    Mycar.accel = function (){
+        speed = speed + 10;
+    }
+///////////////////////////////////////////////
+
+    //리터럴 표기법
+    var Mycar = {
+        model : 12345,
+        speed : 200,
+        color : "red",
+    brake : function (){
+        speed = speed - 10;
+    },
+    accel : function (){
+        speed = speed + 10;
+    }
+       
+
+
+    }
+    
+//////////////////////////////////////////////////
+
+
+   // 객체 생성자 함수로 객체 만들기
+    function Mycar(m,s,c){
+        this.model=m;
+        this.name = s;
+        this.score = c;
+    }
+     //프로토타입
+    Mycar.prototype.brake = function (){
+        speed = speed - 10;
+        }
+    Mycar.prototype.accel = function (){
+        speed = speed + 10;
+        }
+    var won = new Student (1234,200,"red");
+    var two = new Student (5678,120,"yellow");
+   // document.write();
+    
+    </script>
+    
+</body>
+</html>

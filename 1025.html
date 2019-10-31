@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML DOM 트리</title>
+    <script>
+       function changeSpan(){
+
+        var change = document.getElementById("mySpan");
+        change.style.color = "green";
+        change.style.fontSize = "30px";
+        change.style.margin = "20px";
+        change.style.border = "3px dotted red";
+        change.style.display = "block";
+
+       }
+
+       function changeImage (){
+           var p= document.getElementById("firstP");
+           p.innerHTML="<img src='냐옹.jpg'>";
+           
+       }
+    </script>
+</head>
+
+<body>
+    <p style="color:blue">이것은
+        <span style="color:red" id="mySpan">문장입니다.
+        </span>
+    </p>
+
+    <form>
+        <input type="text">
+        <input type="button" value="테스트">
+    </form>
+
+    <input type="button" value="스타일변경" onclick="changeSpan()">
+    <hr>
+
+
+
+
+
+    <h3>innerHTML 활용 : 여기를 클릭하면 예쁜 고양이가 보입니다.</h3>
+    <p id="firstP" style="color:blue" onclick="changeImage()">
+        여기를 <span style="color:red">클릭하세요</span>
+    </p>
+</body>
+
+</html>

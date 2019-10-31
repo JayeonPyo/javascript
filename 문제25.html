@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+     <h1>선택장애 메뉴 골라주기</h1>
+    <script>
+    
+    var input = new Array();
+   var eat = prompt("고민되는 메뉴를 콤마(,)로 구분하여 입력하세요.");
+   input = eat.split(",");
+
+//output은 input 안의 랜덤한 index 값 (0,1,2,3 etc) 
+var output =  Math.floor(Math.random()*input.length);
+
+
+ //input[랜덤한 index]
+document.write("당신은" + input[output] + " 을(를) 먹습니다." );    
+    
+    
+    </script>
+</body>
+</html>

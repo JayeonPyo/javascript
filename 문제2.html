@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Q2t</title>
+</head>
+<body>
+    <script>
+    var name = prompt("이름 입력:");
+    var height = parseInt(prompt("키 입력:"));
+    var weight = parseInt(prompt("몸무게 입력:"));
+    var ave = (height - 100) * 0.9;
+
+    if(weight >= ave-5 || weight <= ave+5){
+        document.write(name + "님은 표준체중입니다.");
+    }
+    else
+    {
+        document.write(name + "님은 표중체중이 아닙니다.");
+    }
+    </script>
+    
+</body>
+</html>
